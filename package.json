@@ -1,0 +1,29 @@
+{
+	"name": "bucketline",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"tsw": "tsc --watch --noEmit",
+		"format": "biome check --apply-unsafe . && eslint --fix . package.json",
+		"format:check": "biome check . && eslint . package.json",
+		"pre-commit": "bun format && bun typecheck && bun test && git add -A",
+		"test:watch": "bun test --watch",
+		"prepare": "husky",
+		"start": "bun i && bun run scripts/index.ts"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@eslint/js": "^9.10.0",
+		"@types/bun": "^1.1.8",
+		"eslint": "^9.10.0",
+		"eslint-config-biome": "^1.8.3",
+		"eslint-config-gev": "^4.5.1",
+		"globals": "^15.9.0",
+		"husky": "^9.1.5",
+		"typescript-eslint": "^8.4.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.5.4"
+	}
+}
