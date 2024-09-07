@@ -3,7 +3,7 @@
 <br/>
 <img src="resources/logo.webp" alt="logo" width="250"/>
 
-# bucketline
+# Bucketline
 [![npm](https://img.shields.io/npm/v/bucketline)](https://www.npmjs.com/package/bucketline) [![npm](https://img.shields.io/npm/dw/bucketline)](https://www.npmjs.com/package/bucketline)
 
 
