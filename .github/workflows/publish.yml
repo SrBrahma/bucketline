@@ -15,6 +15,6 @@ jobs:
       - run: bun format:check
       - run: bun typecheck
       - run: bun test
-      - uses: JS-DevTools/npm-publish@v3
+      - uses: JS-DevTools/npm-publish@v3.1.1
         with:
           token: ${{ secrets.NPM_TOKEN }}
