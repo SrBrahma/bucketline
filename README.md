@@ -6,40 +6,38 @@
 # Bucketline
 [![npm](https://img.shields.io/npm/v/bucketline)](https://www.npmjs.com/package/bucketline) [![npm](https://img.shields.io/npm/dw/bucketline)](https://www.npmjs.com/package/bucketline)
 
-
-
 <h4>
+Bucket Storage integration for your Visual Regression CI. Supports Playwright & Storybook and GitHub & GitLab.
 
+<br/>
 
-Simple Cloud Bucket Storage integration for your Visual Regression CI. Supports Playwright & Storybook and GitHub & GitLab!
-
-<h5>
-Fully free and open-source alternative to Chromatic. No paid tiers!
-</h5>
+Fully free and open-source alternative to Chromatic.
 </h4>
-
-# 🏗️ - WIP  - This is not usable yet! - 👷
 
 
 <br/>
 
+## 🏗️ - WIP! This is not usable yet! - 👷
+
 </div>
 
-## 💿 Installation
+# ☁️ Cloud Setup
 
-# Cloud Setup
-### 1) Setup the Cloud Bucket with UploadThing
 
-  1) Sign-in to https://uploadthing.com
-  2) Create a new app
-  3) Copy the API Key on the dashboard and set these ENVs in your CI settings:
+
+### 1) Setup the File Storage with [Xata](https://xata.io)
+[Xata](https://xata.io) is a Cloud service which Free Tier includes a generous **2GB file storage** [on steroids](https://xata.io/docs/sdk/file-attachments).
+
+  1) Sign-in to [Xata](https://xata.io)
+  2) Go through the onboarding process until they provide the API keys and copy them. You can skip the remaining steps.
+  3) Set these ENVs in your CI settings:
 
   ```
-  UPLOADTHING_SECRET = <UPLOADTHING_SECRET>
-  UPLOADTHING_SECRET = <UPLOADTHING_APP_ID>
+  BUCKETLINE_DB_API_KEY = <XATA_API_KEY>
+  BUCKETLINE_DB_URL = <DATABASE_URL>
   ```
 
-### 2) Setup the NextJS
+### 2) Setup the Frontend with NextJS
 
   1) Sign-in to https://vercel.com/login
   2) Click to add a new project
@@ -52,16 +50,3 @@ Fully free and open-source alternative to Chromatic. No paid tiers!
 ```bash
 bun start
 ```
-
-</br>
-<div align="center" >
-<h3>
-This project is possible thanks to
-</h3>
-<a href="https://github.com/pingdotgg/uploadthing/">
-  <picture >
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pingdotgg/uploadthing/main/assets/uploadthing-logo-dark-background.svg">
-  <img src="https://github.com/pingdotgg/uploadthing/blob/main/assets/uploadthing-logo-light-background.svg" width="480" height="80" alt="Logo for UploadThing">
-</picture>
-</a>
-</div>

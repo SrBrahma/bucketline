@@ -17,7 +17,7 @@
     }
   },
   "files": {
-    "ignore": ["**/*.json"],
+    "ignore": ["**/*.json", "./next/.next"],
     "ignoreUnknown": true
   }
 }

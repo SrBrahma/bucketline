@@ -1,5 +1,5 @@
 import { Text } from "@mantine/core"
-import Image from "next/image.js"
+import Image from "next/image"
 
 export const Footer = () => (
   <footer>

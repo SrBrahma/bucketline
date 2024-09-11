@@ -1,9 +1,11 @@
 {
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit",
-		"source.organizeImports.biome": "explicit",
-		"quickfix.biome": "explicit"
+		"source.fixAll.eslint": "always",
+		"source.organizeImports.biome": "always",
+    "source.addMissingImports.ts": "always",
+		"quickfix.biome": "always",
+    "source.fixAll.ts": "always"
 	},
 	"editor.defaultFormatter": "biomejs.biome",
 

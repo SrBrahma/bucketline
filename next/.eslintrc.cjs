@@ -9,7 +9,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["eslint-config-gev/react-js", "eslint-plugin-valtio"],
+  extends: ["eslint-config-gev/js", "plugin:valtio/recommended"],
   overrides: [
     {
       files: ["*.ts", "*.tsx"],

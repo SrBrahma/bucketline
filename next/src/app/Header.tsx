@@ -6,7 +6,7 @@ import {
   Text,
   UnstyledButton,
 } from "@mantine/core"
-import Image from "next/image.js"
+import Image from "next/image"
 
 export const headerHeight = 74
 const padding = 8
