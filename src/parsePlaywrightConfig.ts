@@ -19,7 +19,6 @@ const playwrightConfigSchema = z.object({
 export const getPlaywrightConfig = async (
   projectPath: string,
 ): Promise<Zod.infer<typeof playwrightConfigSchema>> => {
-  console.time("a")
   const playwrightConfigPath = path.resolve(projectPath, "playwright.config.ts")
 
   if (!fse.existsSync(playwrightConfigPath))
@@ -27,15 +26,12 @@ export const getPlaywrightConfig = async (
 
   let playwrightConfigFile: unknown
 
-  console.timeLog("a", "exists")
-
   try {
     playwrightConfigFile = await import(playwrightConfigPath)
   } catch (error) {
     console.error('Error while importing "playwright.config.ts"')
     throw error
   }
-  console.timeLog("a", "import")
 
   if (
     !playwrightConfigFile ||
@@ -43,19 +39,15 @@ export const getPlaywrightConfig = async (
     !("default" in playwrightConfigFile)
   )
     logErrorAndExit('"playwright.config.ts" has no default export')
-  console.timeLog("a")
 
   const schemaParseResult = playwrightConfigSchema.safeParse(
     playwrightConfigFile.default,
   )
 
-  console.timeLog("a")
-
   if (schemaParseResult.error)
     logErrorAndExit(
       `playwright.config.ts is not valid:\n${schemaParseResult.error.errors.map((err) => ` - ${err.message}`).join("\n")}`,
     )
-  console.timeEnd("a")
 
   return schemaParseResult.data
 }

@@ -13,28 +13,30 @@
     "pre-commit2": "bun format && bun typecheck && bun test && git add -A",
     "test:watch": "bun test --watch",
     "prepare": "husky",
-    "start": "bun i && bun run scripts/index.ts"
+    "start": "bun i && bun run src/index.ts tests/vite"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^12.1.0",
+    "@xata.io/client": "^0.30.0",
+    "@xata.io/kysely": "^0.2.0",
+    "commander": "^12.1.0",
+    "compressing": "^1.10.1",
+    "consola": "^3.2.3",
+    "fs-extra": "^11.2.0",
+    "kysely": "^0.27.4",
+    "watskeburt": "^4.1.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
-    "@commander-js/extra-typings": "^12.1.0",
     "@playwright/test": "^1.47.0",
     "@types/bun": "^1.1.8",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.5.4",
-    "commander": "^12.1.0",
     "eslint-config-gev": "^4.5.1",
     "eslint-config-next": "^14.2.8",
     "eslint-plugin-valtio": "^0.6.4",
     "husky": "^9.1.5",
     "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "@xata.io/client": "^0.30.0",
-    "@xata.io/kysely": "^0.2.0",
-    "fs-extra": "^11.2.0",
-    "kysely": "^0.27.4",
-    "watskeburt": "^4.1.0",
-    "zod": "^3.23.8"
   }
 }
