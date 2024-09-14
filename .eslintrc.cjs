@@ -23,5 +23,7 @@ module.exports = {
     },
   ],
   ignorePatterns: ["/lib/**/*", "/dist/**/*"],
-  rules: {},
+  rules: {
+    "@stylistic/padding-line-between-statements": "off",
+  },
 }

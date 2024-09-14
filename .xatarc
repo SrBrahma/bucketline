@@ -1,6 +1,6 @@
 {
   "databaseURL": "https://Bruno-s-workspace-8rk1pv.eu-central-1.xata.sh/db/bucketline",
   "codegen": {
-    "output": "src/xata.ts"
+    "output": "src/db/xata.ts"
   }
 }
