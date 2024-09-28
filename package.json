@@ -24,6 +24,7 @@
     "consola": "^3.2.3",
     "fs-extra": "^11.2.0",
     "kysely": "^0.27.4",
+    "simple-git": "^3.27.0",
     "ts-node": "^10.9.2",
     "watskeburt": "^4.1.0",
     "zod": "^3.23.8"

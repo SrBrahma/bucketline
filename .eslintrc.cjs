@@ -20,10 +20,10 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: "module",
       },
+      rules: {
+        "@stylistic/padding-line-between-statements": "off",
+      },
     },
   ],
   ignorePatterns: ["/lib/**/*", "/dist/**/*"],
-  rules: {
-    "@stylistic/padding-line-between-statements": "off",
-  },
 }

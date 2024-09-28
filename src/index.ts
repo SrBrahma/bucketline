@@ -1,12 +1,7 @@
-import os from "node:os"
 import path from "node:path"
 import { program } from "@commander-js/extra-typings"
-import compressing from "compressing"
 import consola, { LogLevels } from "consola"
-import fse from "fs-extra"
-import { list } from "watskeburt"
 import { uploadBaseline } from "./baseline"
-import { createCommitRow } from "./db/xataClient"
 import { getPlaywrightConfig } from "./utils/parsePlaywrightConfig"
 
 program

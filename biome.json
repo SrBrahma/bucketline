@@ -8,6 +8,9 @@
     "rules": {
       "complexity": {
         "noForEach": "off"
+      },
+      "style": {
+        "useNodejsImportProtocol": "off"
       }
     }
   },

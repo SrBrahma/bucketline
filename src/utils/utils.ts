@@ -1,7 +1,9 @@
 import consola from "consola"
 
-// eslint-disable-next-line prefer-arrow-functions/prefer-arrow-functions
-export function logErrorAndExit(message: string, exitCode = 1): never {
+export const logErrorAndExit: (message: string, exitCode?: number) => never = (
+  message,
+  exitCode = 1,
+) => {
   consola.error(message)
   process.exit(exitCode)
 }
