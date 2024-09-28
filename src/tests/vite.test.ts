@@ -14,5 +14,5 @@ const setup = async () => {
 
 test("vite works", async () => {
   await setup()
-  console.log("fine")
+  await shell`bun playwright test`
 })
