@@ -178,3 +178,4 @@ dist
 /blob-report/
 /playwright/.cache/
 **/playwright-report/
+**/e2e/
